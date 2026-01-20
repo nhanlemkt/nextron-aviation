@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Nextron Aviation</title>
+  <meta name="description" content="Contact Nextron Aviation to request a consultation about aircraft mission fit and options." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Nextron Aviation home">
+      <img src="assets/logo.png" alt="Nextron Aviation logo">
+    </a>
+
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="fleet.html">Fleet</a>
+      <a href="about.html">About</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section" style="padding-top:2.25rem;">
+    <div class="section-head">
+      <div>
+        <h2>Contact</h2>
+        <p class="section-sub">Tell us about your mission and we’ll recommend the right aircraft concept.</p>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-pad">
+        <form class="form" id="contactForm">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+
+          <div class="field">
+            <label for="aircraft">Interested In</label>
+            <select id="aircraft" name="aircraft">
+              <option value="NX-1">NX-1</option>
+              <option value="NX-5">NX-5</option>
+              <option value="NX-9">NX-9</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Mission Notes</label>
+            <textarea id="message" name="message" placeholder="Share route length, passenger count, schedule, and priorities..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn" type="submit">Send Message</button>
+            <a class="btn secondary" href="fleet.html">View Fleet</a>
+          </div>
+
+          <div class="form-status" id="formStatus" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Nextron Aviation. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
